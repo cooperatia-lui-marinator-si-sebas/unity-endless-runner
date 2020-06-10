@@ -9,7 +9,8 @@ public class ScoreManager : MonoBehaviour
 {
     public int score;
     public Text scoreDisplay;
-   
+
+    public Player1 player;
  
     private void Update()
     {
@@ -17,15 +18,18 @@ public class ScoreManager : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-         if (other.CompareTag("Enemy"))
-         {
+
+        if(player.health > 0)
+        {
+            if (other.CompareTag("Enemy"))
             {
-                score++;
-            Debug.Log(score);
+                {
+                    score++;
+                    Debug.Log(score);
 
-            } 
-         }
+                }
+            }
+        }
     }
-
     
 }

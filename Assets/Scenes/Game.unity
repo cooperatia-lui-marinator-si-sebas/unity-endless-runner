@@ -1776,6 +1776,7 @@ MonoBehaviour:
   effect: {fileID: 8579497731236577713, guid: 9734c563b5b92f84aacd8c617708b383, type: 3}
   healthDisplay: {fileID: 1740810998}
   gameOver: {fileID: 1724161461}
+  score: {fileID: 0}
 --- !u!212 &1447369298
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2574,6 +2575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   scoreDisplay: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &2082946821
 GameObject:
   m_ObjectHideFlags: 0
@@ -2607,6 +2609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   scoreDisplay: {fileID: 693717618}
+  player: {fileID: 1447369297}
 --- !u!50 &2082946823
 Rigidbody2D:
   serializedVersion: 4

@@ -23,6 +23,7 @@ public class Player1 : MonoBehaviour
 
     public GameObject gameOver;
 
+    public ScoreManager score;
  
     void Start()
     {
@@ -37,6 +38,7 @@ public class Player1 : MonoBehaviour
         {
             gameOver.SetActive(true);
             Destroy(gameObject);
+          
         }
 
         transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
