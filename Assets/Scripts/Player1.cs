@@ -33,6 +33,11 @@ public class Player1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (health <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
         healthDisplay.text = health.ToString();
         if (health <= 0)
         {

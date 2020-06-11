@@ -4,12 +4,24 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
+
 public class MainMenu : MonoBehaviour
 {
+    public Player1 player;
+
+    public ScoreManager highscore;
+
+    private void Update()
+    {
+        highscore.highscoreDisplay.text = highscore.highscore.ToString();
+        
+    }
+
     
     public void PLayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void QuitGame()
@@ -17,4 +29,6 @@ public class MainMenu : MonoBehaviour
         Debug.Log("QUIT!");
         Application.Quit();
     }
+
+
 }
