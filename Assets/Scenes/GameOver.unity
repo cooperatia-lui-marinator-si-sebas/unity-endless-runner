@@ -128,9 +128,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 294228858884784885, guid: 413a3254c6ef6b4459d6400feeea09c0,
+        type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 2126054155}
+    - target: {fileID: 1467295136788407836, guid: 413a3254c6ef6b4459d6400feeea09c0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -991
+      objectReference: {fileID: 0}
     - target: {fileID: 3003789220017811142, guid: 413a3254c6ef6b4459d6400feeea09c0,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4837356313489526991, guid: 413a3254c6ef6b4459d6400feeea09c0,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4837356313489526991, guid: 413a3254c6ef6b4459d6400feeea09c0,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4837356313489526991, guid: 413a3254c6ef6b4459d6400feeea09c0,
+        type: 3}
+      propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4837356314984497407, guid: 413a3254c6ef6b4459d6400feeea09c0,
@@ -1015,7 +1040,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_BackGroundColor: {r: 0.8113208, g: 0.3329477, b: 0.3329477, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1062,3 +1087,9 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2126054155 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3005695741331884097, guid: 413a3254c6ef6b4459d6400feeea09c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 395546557}
+  m_PrefabAsset: {fileID: 0}
