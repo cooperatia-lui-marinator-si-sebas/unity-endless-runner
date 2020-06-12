@@ -15,7 +15,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - 1
   - 
   - 
   - 
@@ -40,6 +40,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Animations
+    uniqueID: 3199091455
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Menu
+    uniqueID: 2371411177
     locked: 0
