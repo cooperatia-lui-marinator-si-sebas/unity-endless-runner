@@ -8,11 +8,21 @@ using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
-    public int score;
-    public Text scoreDisplay;
 
-    public Text highscoreDisplay;
+    public static ScoreManager instance;
+
+    private void Awake()
+    {
+        instance = this;        
+    }
+
+    public int score;
     public int highscore;
+
+    public Text scoreDisplay;
+    public Text highscoreDisplay;
+    
+
 
     public Player1 player;
  
@@ -34,12 +44,31 @@ public class ScoreManager : MonoBehaviour
             if (other.CompareTag("Enemy"))
             {
                 {
-                    score++;
-                    Debug.Log(score);
-
+                    AddScore();
+                    
                 }
             }
         }
     }
-    
+
+    public void AddScore() 
+    {
+        score++;
+        UpdateHighscore();
+
+        scoreDisplay.text = score.ToString();
+    }
+
+    public void UpdateHighscore()
+    {
+        if (score > highscore)
+        {
+            highscore = score;
+            highscoreDisplay.text = highscore.ToString();        }
+    }
+
+    public void ResetScore()
+    {
+        score = 0;
+    }
 }
