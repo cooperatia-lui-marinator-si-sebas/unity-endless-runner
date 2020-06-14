@@ -11,60 +11,73 @@ public class ScoreManager : MonoBehaviour
 
     public static ScoreManager instance;
 
-    private void Awake()
-    {
-        instance = this;        
-    }
+
 
     public int score;
     public int highscore;
+    public int gameOverScore;
 
     public Text scoreDisplay;
     public Text highscoreDisplay;
-    
+    public Text gameOverScoreDisplay;
 
 
     public Player1 player;
- 
+    private void Awake()
+    {
+        //ResetScore();
+
+        instance = this;
+        if (PlayerPrefs.HasKey("HighScore"))
+        {
+            highscore = PlayerPrefs.GetInt("HighScore");
+            highscoreDisplay.text = highscore.ToString();
+        }
+    }
+
     private void Update()
     {
-        scoreDisplay.text = score.ToString();
 
-        if (score > highscore) 
-        {
-            highscore = score;
-        }
-    
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
 
-        if(player.health > 0)
+        if (player.health > 0)
         {
             if (other.CompareTag("Enemy"))
             {
                 {
                     AddScore();
-                    
+
                 }
             }
         }
     }
 
-    public void AddScore() 
+
+    public void AddScore()
     {
         score++;
         UpdateHighscore();
 
         scoreDisplay.text = score.ToString();
+ 
+
+       
+        PlayerPrefs.SetInt("Score", score);
+        
     }
 
     public void UpdateHighscore()
     {
-        if (score > highscore)
+        if (score >= highscore)
         {
             highscore = score;
-            highscoreDisplay.text = highscore.ToString();        }
+            highscoreDisplay.text = highscore.ToString();
+        }
+
+        PlayerPrefs.SetInt("HighScore", highscore);
     }
 
     public void ResetScore()

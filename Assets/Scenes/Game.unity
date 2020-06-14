@@ -1289,7 +1289,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1
+  m_Text: 0
 --- !u!222 &693717619
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1668,6 +1668,7 @@ GameObject:
   - component: {fileID: 1115247247}
   - component: {fileID: 1115247246}
   - component: {fileID: 1115247245}
+  - component: {fileID: 1115247248}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1723,6 +1724,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1115247248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115247244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 722954eabc1a4ec48844bd2553f9cbcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  maxY: 0
+  minY: 0
+  Yincrement: 0
+  health: 3
+  effect: {fileID: 0}
+  healthDisplay: {fileID: 0}
+  gameOver: {fileID: 0}
+  score: {fileID: 0}
 --- !u!1 &1124576952
 GameObject:
   m_ObjectHideFlags: 0
@@ -1982,7 +2004,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1447369296}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a19d41a6d11ec6148bbbf4f0017beb54, type: 3}
+  m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1593767666
@@ -2773,6 +2795,7 @@ MonoBehaviour:
   highscore: 0
   scoreDisplay: {fileID: 0}
   highscoreDisplay: {fileID: 0}
+  gameOverScoreDisplay: {fileID: 0}
   player: {fileID: 0}
 --- !u!1 &1993964130 stripped
 GameObject:
@@ -2990,6 +3013,7 @@ MonoBehaviour:
   highscore: 0
   scoreDisplay: {fileID: 693717618}
   highscoreDisplay: {fileID: 932764083}
+  gameOverScoreDisplay: {fileID: 0}
   player: {fileID: 1447369297}
 --- !u!50 &2082946823
 Rigidbody2D:

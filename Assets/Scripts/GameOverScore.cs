@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GameOverScore : MonoBehaviour
 {
-
+    public int gameOverScore;
     public Text gameOverScoreDisplay;
 
     public ScoreManager instance;
@@ -13,7 +13,8 @@ public class GameOverScore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameOverScore = PlayerPrefs.GetInt("Score");
+        gameOverScoreDisplay.text = gameOverScore.ToString();
     }
 
     // Update is called once per frame
@@ -23,5 +24,6 @@ public class GameOverScore : MonoBehaviour
     }
 
 
+    
 
 }

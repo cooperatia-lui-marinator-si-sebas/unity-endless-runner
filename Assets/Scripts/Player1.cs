@@ -63,5 +63,5 @@ public class Player1 : MonoBehaviour
             transform.position = targetPos;
         }
     }
-   
+
 }
