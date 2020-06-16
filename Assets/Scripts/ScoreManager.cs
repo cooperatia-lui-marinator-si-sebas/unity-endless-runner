@@ -4,6 +4,7 @@ using System.Globalization;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class ScoreManager : MonoBehaviour
@@ -37,6 +38,10 @@ public class ScoreManager : MonoBehaviour
 
     private void Update()
     {
+        //if (score >= 100){SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);}
+            
+        
+        
 
     }
 
