@@ -24,10 +24,34 @@ public class Player1 : MonoBehaviour
     public GameObject gameOver;
 
     public ScoreManager score;
- 
+
+
+    Scene currentScene;
+    string sceneName;
+    int gameOverBuildIndex;
+
+
     void Start()
     {
         shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<Shake>();
+
+        currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
+
+        switch (sceneName)
+        {
+            case "Game":
+                gameOverBuildIndex = 3;
+                break;
+            case "Game2":
+                gameOverBuildIndex = 5;
+                break;
+            case "Game3":
+                gameOverBuildIndex = 7;
+                break;
+
+        }
+
     }
 
     // Update is called once per frame
@@ -35,7 +59,7 @@ public class Player1 : MonoBehaviour
     {
         if (health <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(gameOverBuildIndex);
         }
 
         healthDisplay.text = health.ToString();

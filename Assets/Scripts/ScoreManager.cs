@@ -22,18 +22,53 @@ public class ScoreManager : MonoBehaviour
     public Text highscoreDisplay;
     public Text gameOverScoreDisplay;
 
+    Scene currentScene;
+    string sceneName;
+
 
     public Player1 player;
+
+
+    private void Start()
+    {
+        currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
+
+        switch (sceneName)
+        {
+            case "Game":
+                if (PlayerPrefs.HasKey("HighScoreScene2"))
+                {
+                    Debug.Log(PlayerPrefs.GetInt("HighScoreScene2"));
+                    highscore = PlayerPrefs.GetInt("HighScoreScene2");
+                    highscoreDisplay.text = highscore.ToString();
+                }
+                break;
+            case "Game2":
+                if (PlayerPrefs.HasKey("HighScoreScene4"))
+                {
+                    highscore = PlayerPrefs.GetInt("HighScoreScene4");
+                    highscoreDisplay.text = highscore.ToString();
+                }
+                break;
+            case "Game3":
+                if (PlayerPrefs.HasKey("HighScoreScene6"))
+                {
+                    highscore = PlayerPrefs.GetInt("HighScoreScene6");
+                    highscoreDisplay.text = highscore.ToString();
+                }
+                break;
+        }
+
+    }
+
     private void Awake()
     {
-        //ResetScore();
+        ResetScore();
 
         instance = this;
-        if (PlayerPrefs.HasKey("HighScore"))
-        {
-            highscore = PlayerPrefs.GetInt("HighScore");
-            highscoreDisplay.text = highscore.ToString();
-        }
+        
+
     }
 
     private void Update()
@@ -64,26 +99,53 @@ public class ScoreManager : MonoBehaviour
     public void AddScore()
     {
         score++;
-        UpdateHighscore();
-
         scoreDisplay.text = score.ToString();
- 
+        UpdateHighscore();
 
        
         PlayerPrefs.SetInt("Score", score);
         
     }
+    
+    
+ 
 
     public void UpdateHighscore()
     {
-        if (score >= highscore)
-        {
-            highscore = score;
-            highscoreDisplay.text = highscore.ToString();
-        }
 
-        PlayerPrefs.SetInt("HighScore", highscore);
+        // Check the scene name as a conditional.
+         switch (sceneName)
+         {
+         case "Game":
+                if (score >= highscore)
+                {
+                    highscore = score;
+                    highscoreDisplay.text = highscore.ToString();
+                    PlayerPrefs.SetInt("HighScoreScene2", highscore);
+                }
+                break;
+         case "Game2":
+                if (score >= highscore)
+                {
+                    highscore = score;
+                    highscoreDisplay.text = highscore.ToString();
+                    PlayerPrefs.SetInt("HighScoreScene4", highscore);
+                }
+                break;
+         case "Game3":
+                if (score >= highscore)
+                {
+                    highscore = score;
+                    highscoreDisplay.text = highscore.ToString();
+                    PlayerPrefs.SetInt("HighScoreScene6", highscore);
+                }
+                break;
+
+         } 
     }
+
+   
+    
 
     public void ResetScore()
     {

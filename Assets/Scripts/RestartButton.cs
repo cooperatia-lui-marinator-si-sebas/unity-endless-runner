@@ -5,14 +5,30 @@ using UnityEngine.SceneManagement;
 
 public class RestartButton : MonoBehaviour
 {
+    private void Start()
+    {
 
-    public void OnButtonPress()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
-    public void OnButtonPress1()
+
+    public void OnButtonPressGameOver()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(2);
+    
     }
+    public void OnButtonPressGameOver2()
+    {
+        SceneManager.LoadScene(4);
+
+    }
+    public void OnButtonPressGameOver3()
+    {
+        SceneManager.LoadScene(6);
+
+    }
+
+    //public void OnButtonPress1()
+    //{
+    //  SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    // }
 
 }
