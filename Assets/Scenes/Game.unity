@@ -151,9 +151,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8855e69aea6945469cceebf27dde3f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  endX: -29.01
-  startX: 29.01
+  speed: 10
+  endX: -30
+  startX: 34.93
 --- !u!212 &18763936
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -249,8 +249,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  endX: -29.01
-  startX: 29.01
+  endX: -30
+  startX: 34.93
 --- !u!212 &68051444
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -345,9 +345,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8855e69aea6945469cceebf27dde3f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  endX: -29.01
-  startX: 29.01
+  speed: 10
+  endX: -30
+  startX: 34.93
 --- !u!212 &194360587
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -642,9 +642,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8855e69aea6945469cceebf27dde3f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  endX: -29.01
-  startX: 29.01
+  speed: 10
+  endX: -30
+  startX: 34.93
 --- !u!212 &396158609
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -740,8 +740,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  endX: -29.01
-  startX: 29.01
+  endX: -30
+  startX: 34.93
 --- !u!212 &403970428
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -837,8 +837,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  endX: -29.01
-  startX: 29.01
+  endX: -30
+  startX: 34.93
 --- !u!212 &462688708
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1037,8 +1037,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  endX: -29.01
-  startX: 29.01
+  endX: -30
+  startX: 34.93
 --- !u!212 &541763354
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1591,8 +1591,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  endX: -29.01
-  startX: 29.01
+  endX: -30
+  startX: 34.93
 --- !u!212 &1101446776
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1776,8 +1776,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  endX: -29.01
-  startX: 29.01
+  endX: -30
+  startX: 34.93
 --- !u!212 &1124576954
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1836,7 +1836,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124576952}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.16, y: -1.3956945, z: 14.618056}
+  m_LocalPosition: {x: 28.42, y: -1.3956945, z: 14.618056}
   m_LocalScale: {x: 1, y: 0.55, z: 1}
   m_Children: []
   m_Father: {fileID: 631990345}
@@ -2140,8 +2140,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  endX: -29.01
-  startX: 29.01
+  endX: -30
+  startX: 34.93
 --- !u!212 &1682741447
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2601,9 +2601,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8855e69aea6945469cceebf27dde3f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  endX: -29.01
-  startX: 29.01
+  speed: 10
+  endX: -30
+  startX: 34.93
 --- !u!212 &1834168644
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3101,8 +3101,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  endX: -29.01
-  startX: 29.01
+  endX: -30
+  startX: 34.93
 --- !u!212 &2102102395
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3161,7 +3161,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2102102393}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.732828, y: -1.3956945, z: 14.618056}
+  m_LocalPosition: {x: -7.9, y: -1.3956945, z: 14.618056}
   m_LocalScale: {x: 1, y: 0.55, z: 1}
   m_Children: []
   m_Father: {fileID: 631990345}
