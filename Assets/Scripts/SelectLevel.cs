@@ -11,17 +11,17 @@ public class SelectLevel : MonoBehaviour
     
         public void Easy()
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(2);
         }
         
         public void Medium()
         {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+        SceneManager.LoadScene(4);
         }
 
        public void Hard()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 5);
+        SceneManager.LoadScene(6);
     }
 
 

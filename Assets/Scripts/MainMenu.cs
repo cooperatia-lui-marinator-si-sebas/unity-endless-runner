@@ -21,18 +21,13 @@ public class MainMenu : MonoBehaviour
     
     public void PLayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(1);
     }
 
     public void QuitGame()
     {
         Debug.Log("QUIT!");
         Application.Quit();
-    }
-
-    public void Easy()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
 
