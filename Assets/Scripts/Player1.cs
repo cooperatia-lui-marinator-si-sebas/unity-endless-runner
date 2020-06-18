@@ -44,12 +44,12 @@ public class Player1 : MonoBehaviour
             case "Game":
                 gameOverBuildIndex = 3;
                 break;
-            case "Game2":
+            case "Game3":
                 gameOverBuildIndex = 5;
                 break;
-            case "Game3":
+           /* case "Game3":
                 gameOverBuildIndex = 7;
-                break;
+                break;*/
 
         }
 

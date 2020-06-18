@@ -22,8 +22,8 @@ public class ScoreManager : MonoBehaviour
     public Text highscoreDisplay;
     public Text gameOverScoreDisplay;
 
-    Scene currentScene;
-    string sceneName;
+    public Scene currentScene;
+    public string sceneName;
 
 
     public Player1 player;
@@ -31,6 +31,8 @@ public class ScoreManager : MonoBehaviour
 
     private void Start()
     {
+        ResetScore();
+        
         currentScene = SceneManager.GetActiveScene();
         sceneName = currentScene.name;
 
@@ -44,17 +46,17 @@ public class ScoreManager : MonoBehaviour
                     highscoreDisplay.text = highscore.ToString();
                 }
                 break;
-            case "Game2":
+            /*case "Game2":
                 if (PlayerPrefs.HasKey("HighScoreScene4"))
                 {
                     highscore = PlayerPrefs.GetInt("HighScoreScene4");
                     highscoreDisplay.text = highscore.ToString();
                 }
-                break;
+                break;*/
             case "Game3":
-                if (PlayerPrefs.HasKey("HighScoreScene6"))
+                if (PlayerPrefs.HasKey("HighScoreScene4"))
                 {
-                    highscore = PlayerPrefs.GetInt("HighScoreScene6");
+                    highscore = PlayerPrefs.GetInt("HighScoreScene4");
                     highscoreDisplay.text = highscore.ToString();
                 }
                 break;
@@ -115,20 +117,20 @@ public class ScoreManager : MonoBehaviour
                     PlayerPrefs.SetInt("HighScoreScene2", highscore);
                 }
                 break;
-         case "Game2":
+         /*case "Game2":
                 if (score >= highscore)
                 {
                     highscore = score;
                     highscoreDisplay.text = highscore.ToString();
                     PlayerPrefs.SetInt("HighScoreScene4", highscore);
                 }
-                break;
+                break;*/
          case "Game3":
                 if (score >= highscore)
                 {
                     highscore = score;
                     highscoreDisplay.text = highscore.ToString();
-                    PlayerPrefs.SetInt("HighScoreScene6", highscore);
+                    PlayerPrefs.SetInt("HighScoreScene4", highscore);
                 }
                 break;
 

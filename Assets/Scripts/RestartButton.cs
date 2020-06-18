@@ -15,20 +15,20 @@ public class RestartButton : MonoBehaviour
         SceneManager.LoadScene(2);
     
     }
-    public void OnButtonPressGameOver2()
+ /*   public void OnButtonPressGameOver2()
+    {
+        SceneManager.LoadScene(4);
+
+    }*/
+    public void OnButtonPressGameOver3()
     {
         SceneManager.LoadScene(4);
 
     }
-    public void OnButtonPressGameOver3()
+
+/*    public void OnButtonPress1()
     {
-        SceneManager.LoadScene(6);
-
-    }
-
-    //public void OnButtonPress1()
-    //{
-    //  SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-    // }
+      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+     }*/
 
 }

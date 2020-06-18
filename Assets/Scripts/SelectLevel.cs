@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SelectLevel : MonoBehaviour
 {
-    
-
 
     
         public void Easy()
@@ -14,14 +12,14 @@ public class SelectLevel : MonoBehaviour
             SceneManager.LoadScene(2);
         }
         
-        public void Medium()
+/*        public void Medium()
         {
         SceneManager.LoadScene(4);
-        }
+        }*/
 
        public void Hard()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(4);
     }
 
 
