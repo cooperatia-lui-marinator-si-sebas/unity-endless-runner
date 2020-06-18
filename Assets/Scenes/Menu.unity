@@ -445,9 +445,6 @@ MonoBehaviour:
   scoreDisplay: {fileID: 0}
   highscoreDisplay: {fileID: 0}
   gameOverScoreDisplay: {fileID: 0}
-  currentScene:
-    m_Handle: 0
-  sceneName: 
   player: {fileID: 0}
 --- !u!114 &249753990
 MonoBehaviour:
@@ -1355,9 +1352,6 @@ MonoBehaviour:
   scoreDisplay: {fileID: 0}
   highscoreDisplay: {fileID: 0}
   gameOverScoreDisplay: {fileID: 0}
-  currentScene:
-    m_Handle: 0
-  sceneName: 
   player: {fileID: 0}
 --- !u!4 &1668386115
 Transform:
