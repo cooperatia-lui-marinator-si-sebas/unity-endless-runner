@@ -64,7 +64,7 @@ public class Player1 : MonoBehaviour
         }
         else
         {
-            Debug.Log("NullReferenceException");
+            //Debug.Log("NullReferenceException");
         }
 
         GoToGameOverScene();

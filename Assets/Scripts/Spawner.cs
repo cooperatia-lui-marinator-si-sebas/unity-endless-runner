@@ -10,13 +10,15 @@ public class Spawner : MonoBehaviour
     public float startTimeBtwSpawn;
     public float decreaseTime;
     public float minTime = 0.65f;
-
+    [SerializeField]
+    private GameObject _enemyContainer;
     private void Update()
     {
         if (timeBtwSpawn <= 0)
         {
             int rand = Random.Range(0, obstaclePatterns.Length);
-            Instantiate(obstaclePatterns[rand], transform.position, Quaternion.identity);
+            GameObject newEnemy = Instantiate(obstaclePatterns[rand], transform.position, Quaternion.identity);
+            newEnemy.transform.parent = _enemyContainer.transform;
             timeBtwSpawn = startTimeBtwSpawn;
             if (startTimeBtwSpawn > minTime)
             { 
