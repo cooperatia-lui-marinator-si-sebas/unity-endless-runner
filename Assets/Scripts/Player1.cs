@@ -58,9 +58,16 @@ public class Player1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthDisplay.text = health.ToString();
-        
-        GoTogameOverScene();
+        if (healthDisplay)
+        {
+            healthDisplay.text = health.ToString();  //NullReferenceException
+        }
+        else
+        {
+            Debug.Log("NullReferenceException");
+        }
+
+        GoToGameOverScene();
 
         transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
 
@@ -80,7 +87,7 @@ public class Player1 : MonoBehaviour
         }
     }
 
-    private void GoTogameOverScene()
+    private void GoToGameOverScene()
     {
         if (health <= 0)
         {
