@@ -12,12 +12,6 @@ public class MainMenu : MonoBehaviour
 
     public ScoreManager highscore;
 
-    private void Update()
-    {
-        highscore.highscoreDisplay.text = highscore.highscore.ToString();
-        
-    }
-
     
     public void PLayGame()
     {

@@ -71,15 +71,6 @@ public class ScoreManager : MonoBehaviour
 
     }
 
-    private void Update()
-    {
-        //if (score >= 100){SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);}
-            
-        
-        
-
-    }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
 

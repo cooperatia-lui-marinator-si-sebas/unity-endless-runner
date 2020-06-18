@@ -26,6 +26,7 @@ public class Player1 : MonoBehaviour
     public ScoreManager score;
 
 
+
     Scene currentScene;
     string sceneName;
     int gameOverBuildIndex;
@@ -57,22 +58,13 @@ public class Player1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (health <= 0)
-        {
-            SceneManager.LoadScene(gameOverBuildIndex);
-        }
-
         healthDisplay.text = health.ToString();
-        if (health <= 0)
-        {
-            gameOver.SetActive(true);
-            Destroy(gameObject);
-          
-        }
+        
+        GoTogameOverScene();
 
         transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
 
-        if (Input.GetKeyDown(KeyCode.UpArrow)&& transform.position.y < maxY)
+        if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < maxY)
         {
             shake.CamShake();
             Instantiate(effect, transform.position, Quaternion.identity);
@@ -88,4 +80,14 @@ public class Player1 : MonoBehaviour
         }
     }
 
+    private void GoTogameOverScene()
+    {
+        if (health <= 0)
+        {
+            SceneManager.LoadScene(gameOverBuildIndex);
+            gameOver.SetActive(true);
+            Destroy(gameObject);
+
+        }
+    }
 }

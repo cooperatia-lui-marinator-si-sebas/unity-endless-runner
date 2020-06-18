@@ -484,7 +484,7 @@ PrefabInstance:
     - target: {fileID: 4837356315023038687, guid: 413a3254c6ef6b4459d6400feeea09c0,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3005695741331884097, guid: 413a3254c6ef6b4459d6400feeea09c0, type: 3}
@@ -1094,7 +1094,7 @@ MonoBehaviour:
   effect: {fileID: 8579497731236577713, guid: 9734c563b5b92f84aacd8c617708b383, type: 3}
   healthDisplay: {fileID: 1970935553}
   gameOver: {fileID: 2139671600}
-  score: {fileID: 0}
+  score: {fileID: 1096509031}
 --- !u!50 &802989781
 Rigidbody2D:
   serializedVersion: 4
@@ -1534,7 +1534,7 @@ MonoBehaviour:
   scoreDisplay: {fileID: 464940784}
   highscoreDisplay: {fileID: 1807362631}
   gameOverScoreDisplay: {fileID: 0}
-  player: {fileID: 802989780}
+  player: {fileID: 0}
 --- !u!50 &1096509032
 Rigidbody2D:
   serializedVersion: 4
@@ -2551,7 +2551,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0000
+  m_Text: 
 --- !u!222 &1807362632
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2961,7 +2961,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: HP
+  m_Text: 
 --- !u!1 &2000343079
 GameObject:
   m_ObjectHideFlags: 0
