@@ -70,7 +70,7 @@ public class Player1 : MonoBehaviour
         GoToGameOverScene();
 
         transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
-
+        /*
         if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < maxY)
         {
             shake.CamShake();
@@ -84,7 +84,7 @@ public class Player1 : MonoBehaviour
             Instantiate(effect, transform.position, Quaternion.identity);
             targetPos = new Vector2(transform.position.x, transform.position.y - Yincrement);
             transform.position = targetPos;
-        }
+        }*/
     }
 
     private void GoToGameOverScene()
@@ -100,17 +100,23 @@ public class Player1 : MonoBehaviour
 
     public void OnUpButtonPress()
     {
-        shake.CamShake();
-        Instantiate(effect, transform.position, Quaternion.identity);
-        targetPos = new Vector2(transform.position.x, transform.position.y + Yincrement);
-        transform.position = targetPos;
+        if (transform.position.y < maxY)
+        {
+            shake.CamShake();
+            Instantiate(effect, transform.position, Quaternion.identity);
+            targetPos = new Vector2(transform.position.x, transform.position.y + Yincrement);
+            transform.position = targetPos;
+        }
     }
 
     public void OnDownButtonPress()
     {
-        shake.CamShake();
-        Instantiate(effect, transform.position, Quaternion.identity);
-        targetPos = new Vector2(transform.position.x, transform.position.y - Yincrement);
-        transform.position = targetPos;
+        if (transform.position.y > minY)
+        {
+            shake.CamShake();
+            Instantiate(effect, transform.position, Quaternion.identity);
+            targetPos = new Vector2(transform.position.x, transform.position.y - Yincrement);
+            transform.position = targetPos;
+        }
     }
 }
