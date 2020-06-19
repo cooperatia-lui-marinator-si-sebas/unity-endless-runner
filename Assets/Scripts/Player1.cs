@@ -47,15 +47,10 @@ public class Player1 : MonoBehaviour
             case "Game3":
                 gameOverBuildIndex = 5;
                 break;
-           /* case "Game3":
-                gameOverBuildIndex = 7;
-                break;*/
-
         }
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (healthDisplay)
@@ -68,23 +63,6 @@ public class Player1 : MonoBehaviour
         }
 
         GoToGameOverScene();
-
-        transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
-        /*
-        if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < maxY)
-        {
-            shake.CamShake();
-            Instantiate(effect, transform.position, Quaternion.identity);
-            targetPos = new Vector2(transform.position.x, transform.position.y + Yincrement);
-            transform.position = targetPos;
-        }
-        else if (Input.GetKeyDown(KeyCode.DownArrow) && transform.position.y > minY)
-        {
-            shake.CamShake();
-            Instantiate(effect, transform.position, Quaternion.identity);
-            targetPos = new Vector2(transform.position.x, transform.position.y - Yincrement);
-            transform.position = targetPos;
-        }*/
     }
 
     private void GoToGameOverScene()

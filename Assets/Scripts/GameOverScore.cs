@@ -16,7 +16,6 @@ public class GameOverScore : MonoBehaviour
     public string sceneName;
 
 
-    // Start is called before the first frame update
     void Start()
     {
         gameOverScore = PlayerPrefs.GetInt("Score");
@@ -34,13 +33,6 @@ public class GameOverScore : MonoBehaviour
                     gameOverHighScoreDisplay.text = gameOverHighScore.ToString();
                 }
                 break;
-            /*case "Game2":
-                if (PlayerPrefs.HasKey("HighScoreScene4"))
-                {
-                    highscore = PlayerPrefs.GetInt("HighScoreScene4");
-                    highscoreDisplay.text = highscore.ToString();
-                }
-                break;*/
             case "GameOver3":
                 if (PlayerPrefs.HasKey("HighScoreScene4"))
                 {
@@ -51,13 +43,6 @@ public class GameOverScore : MonoBehaviour
         }
 
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 
     
 

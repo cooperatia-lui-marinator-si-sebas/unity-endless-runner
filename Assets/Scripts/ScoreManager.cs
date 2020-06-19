@@ -25,7 +25,6 @@ public class ScoreManager : MonoBehaviour
     public Scene currentScene;
     public string sceneName;
 
-
     public Player1 player;
 
 
@@ -46,13 +45,6 @@ public class ScoreManager : MonoBehaviour
                     highscoreDisplay.text = highscore.ToString();
                 }
                 break;
-            /*case "Game2":
-                if (PlayerPrefs.HasKey("HighScoreScene4"))
-                {
-                    highscore = PlayerPrefs.GetInt("HighScoreScene4");
-                    highscoreDisplay.text = highscore.ToString();
-                }
-                break;*/
             case "Game3":
                 if (PlayerPrefs.HasKey("HighScoreScene4"))
                 {
@@ -88,7 +80,6 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
-
     public void AddScore()
     {
         score++;
@@ -99,14 +90,10 @@ public class ScoreManager : MonoBehaviour
         PlayerPrefs.SetInt("Score", score);
         
     }
-    
-    
- 
 
     public void UpdateHighscore()
     {
 
-        // Check the scene name as a conditional.
          switch (sceneName)
          {
          case "Game":
@@ -117,14 +104,6 @@ public class ScoreManager : MonoBehaviour
                     PlayerPrefs.SetInt("HighScoreScene2", highscore);
                 }
                 break;
-         /*case "Game2":
-                if (score >= highscore)
-                {
-                    highscore = score;
-                    highscoreDisplay.text = highscore.ToString();
-                    PlayerPrefs.SetInt("HighScoreScene4", highscore);
-                }
-                break;*/
          case "Game3":
                 if (score >= highscore)
                 {
@@ -136,9 +115,6 @@ public class ScoreManager : MonoBehaviour
 
          } 
     }
-
-   
-    
 
     public void ResetScore()
     {
