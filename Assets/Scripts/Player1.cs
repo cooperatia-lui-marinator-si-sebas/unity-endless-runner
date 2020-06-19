@@ -97,4 +97,20 @@ public class Player1 : MonoBehaviour
 
         }
     }
+
+    public void OnUpButtonPress()
+    {
+        shake.CamShake();
+        Instantiate(effect, transform.position, Quaternion.identity);
+        targetPos = new Vector2(transform.position.x, transform.position.y + Yincrement);
+        transform.position = targetPos;
+    }
+
+    public void OnDownButtonPress()
+    {
+        shake.CamShake();
+        Instantiate(effect, transform.position, Quaternion.identity);
+        targetPos = new Vector2(transform.position.x, transform.position.y - Yincrement);
+        transform.position = targetPos;
+    }
 }
