@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  endX: -30
+  endX: -33.07
   startX: 34.93
 --- !u!212 &18763936
 SpriteRenderer:
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  endX: -30
+  endX: -33.07
   startX: 34.93
 --- !u!212 &68051444
 SpriteRenderer:
@@ -606,7 +606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  endX: -30
+  endX: -33.07
   startX: 34.93
 --- !u!212 &194360587
 SpriteRenderer:
@@ -903,7 +903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  endX: -30
+  endX: -33.07
   startX: 34.93
 --- !u!212 &396158609
 SpriteRenderer:
@@ -1000,7 +1000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  endX: -30
+  endX: -33.07
   startX: 34.93
 --- !u!212 &403970428
 SpriteRenderer:
@@ -1253,7 +1253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  endX: -30
+  endX: -33.07
   startX: 34.93
 --- !u!212 &462688708
 SpriteRenderer:
@@ -1453,7 +1453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  endX: -30
+  endX: -33.07
   startX: 34.93
 --- !u!212 &541763354
 SpriteRenderer:
@@ -1928,7 +1928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  endX: -30
+  endX: -33.07
   startX: 34.93
 --- !u!212 &1101446776
 SpriteRenderer:
@@ -2113,7 +2113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  endX: -30
+  endX: -33.07
   startX: 34.93
 --- !u!212 &1124576954
 SpriteRenderer:
@@ -2362,7 +2362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  endX: -30
+  endX: -33.07
   startX: 34.93
 --- !u!212 &1682741447
 SpriteRenderer:
@@ -2850,7 +2850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  endX: -30
+  endX: -33.07
   startX: 34.93
 --- !u!212 &1834168644
 SpriteRenderer:
@@ -3361,7 +3361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  endX: -30
+  endX: -33.07
   startX: 34.93
 --- !u!212 &2102102395
 SpriteRenderer:
