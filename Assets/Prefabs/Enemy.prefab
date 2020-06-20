@@ -74,7 +74,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   speed: 15
-  effect: {fileID: 4914327446992711712, guid: 8ccf40cded1632846bf6182d191c9e92, type: 3}
+  effect: {fileID: 8528938887608490344, guid: 8ac97ba57152aea4596f854002196eaa, type: 3}
 --- !u!212 &-30148438013437343
 SpriteRenderer:
   m_ObjectHideFlags: 0

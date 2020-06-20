@@ -2836,7 +2836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   maxY: 10
-  minY: -10
+  minY: -5
   Yincrement: 5
   health: 3
   effect: {fileID: 8579497731236577713, guid: 9734c563b5b92f84aacd8c617708b383, type: 3}
