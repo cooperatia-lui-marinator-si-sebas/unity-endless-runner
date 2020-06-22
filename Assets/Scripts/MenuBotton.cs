@@ -10,4 +10,8 @@ public class MenuBotton : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public void SelectLevelBUton()
+    {
+        SceneManager.LoadScene(1);
+    }
 }

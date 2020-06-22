@@ -457,7 +457,7 @@ MonoBehaviour:
   - {fileID: 6846037629368106287, guid: 8edd8e6fb99985a46b5a7cffa37695e1, type: 3}
   - {fileID: 6994845148875892477, guid: a466fec9e0d772448acd0a9141f7c0bb, type: 3}
   - {fileID: 3031802304597076997, guid: 434ba15d9c2c3dc4c84a0b132a981a55, type: 3}
-  startTimeBtwSpawn: 1.45
+  startTimeBtwSpawn: 0.51
   decreaseTime: 0.3
   minTime: 0.65
 --- !u!4 &135961627
