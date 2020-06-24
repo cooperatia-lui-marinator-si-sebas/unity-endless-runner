@@ -533,9 +533,14 @@ MonoBehaviour:
   - {fileID: 6846037629368106287, guid: 8edd8e6fb99985a46b5a7cffa37695e1, type: 3}
   - {fileID: 6994845148875892477, guid: a466fec9e0d772448acd0a9141f7c0bb, type: 3}
   - {fileID: 3031802304597076997, guid: 434ba15d9c2c3dc4c84a0b132a981a55, type: 3}
-  startTimeBtwSpawn: 0.51
+  - {fileID: 8046091002020149765, guid: a15159ac60987f34ba62e533a1f45d97, type: 3}
+  - {fileID: 3960853052730197596, guid: 2f3856de11e4ad74da88726afbb5e1aa, type: 3}
+  - {fileID: 8505138425179027875, guid: 63c241cca9631b345894ed1f7a559178, type: 3}
+  - {fileID: 3681596690491163073, guid: dedbdfe051033984f99895de8d0e2035, type: 3}
+  - {fileID: 6032007450093043252, guid: ffdd0532c7a45e14e8bb6fc952270d30, type: 3}
+  startTimeBtwSpawn: 1.5
   decreaseTime: 0.3
-  minTime: 0.65
+  minTime: 0.6
 --- !u!4 &135961627
 Transform:
   m_ObjectHideFlags: 0
